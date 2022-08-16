@@ -6,7 +6,7 @@ import argparse
 def parse():
     parser = argparse.ArgumentParser(description="darkflow_configs")
     parser.add_argument('--mode', type=str, default='training', choices=['training'], help='Choose if are you training or testing the model')
-    parser.add_argument('--configs_file', type=str, default='/workdir/huichi/NF-C-VAE/configs.json')
+    parser.add_argument('--configs_file', type=str, default='/global/homes/a/agarabag/LHCO2020-cVAE/configs.json')
     parser.add_argument('--network', type=str, default='convnet', choices=['convnet'])
     parser.add_argument('--flow', type=str, default='noflow', choices=['noflow', 'planar', 'orthosnf', 'householdersnf', 'triangularsnf', 'iaf', 'convflow', 'maf'])
     args = parser.parse_args()

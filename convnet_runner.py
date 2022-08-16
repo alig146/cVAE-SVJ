@@ -83,8 +83,8 @@ class ConvNetRunner:
 
         nFeat = 6
 
-        outerdata_train = np.load("/workdir/huichi/CATHODE/preprocessed_data_6var/outerdata_train_6var.npy")
-        outerdata_test = np.load("/workdir/huichi/CATHODE/preprocessed_data_6var/outerdata_test_6var.npy")
+        outerdata_train = np.load("Datasets/preprocessed_data_6var/outerdata_train_6var.npy")
+        outerdata_test = np.load("Datasets/preprocessed_data_6var/outerdata_test_6var.npy")
 
         outerdata_train = outerdata_train[outerdata_train[:,nFeat+1]==0]
         outerdata_test = outerdata_test[outerdata_test[:,nFeat+1]==0]

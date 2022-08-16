@@ -3,6 +3,8 @@
 __pycache__
 -z
 model_save/
+pre_trained_data/
+classifier_cbvae_6varInput_4varTrain/
 data_save/
 *log*.txt
 *~
